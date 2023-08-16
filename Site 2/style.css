@@ -1,0 +1,113 @@
+/* Reset de Estilos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos Globais */
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Estilos do Título (Header) */
+.title {
+  background-image: url('image/Titulo.png');
+  background-size: auto 10vw; /* Define o tamanho responsivo da imagem de fundo */
+  background-position: center; /* Centraliza a imagem de fundo */
+  width: 100%;
+  height: 10vw; /* Define a altura da área do título */
+  background-repeat: no-repeat;
+}
+
+/* Estilos da Seção de Fundo (Background) */
+.fundo {
+  background-image: url('image/fundo.png');
+  background-size: auto 90vw; /* Define o tamanho responsivo da imagem de fundo */
+  background-position: center; /* Centraliza a imagem de fundo */
+  width: 100%;
+  height: 60vw; /* Define a altura da área de fundo */
+  background-repeat: no-repeat;
+  display: flex; /* Utiliza o Flexbox para alinhar os elementos na linha */
+}
+
+/* Estilos do Conteúdo Principal (Main) */
+main {
+  background-color: #072804; /* Define a cor de fundo do conteúdo principal */
+  padding: 20px 10px; /* Espaçamento vertical 20px e horizontal 10px */
+  display: flex; /* Utiliza o Flexbox para alinhar os elementos na linha */
+  align-items: center; /* Alinha os elementos verticalmente no centro */
+}
+
+/* Estilos das Imagens Conta e Fonte */
+.conta,
+.fonte {
+  max-width: 15%;
+  height: auto;
+  margin: 0 100px; /* Espaçamento entre as imagens */
+}
+
+/* Estilos do Container da Imagem (Image Container) */
+.image-container {
+  position: relative;
+  max-width: 40%;
+  height: auto;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Estilos da Sobreposição da Imagem (Image Overlay) */
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  width: auto;
+  max-width: 80%;
+  min-width: 380px;
+  height: auto;
+  background-color: #000000;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: left 0.3s, opacity 0.3s;
+  padding: 10px;
+  color: #FFFFFF;
+}
+
+/* Estilos de Interação Hover */
+.image-container:hover .image-overlay {
+  display: flex;
+  left: calc(100% + 1px);
+  opacity: 1;
+}
+
+/* Estilos das Colunas Laterais */
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+/* Estilos do Bloco do Meio */
+.middle-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #FFFFFF;
+  padding: 30px;
+  margin: 20px 0;
+}
+
+/* Estilos das Imagens na Seção de Fundo */
+.fundo img {
+  width: 85%;
+  max-width: 100%;
+  height: auto;
+  margin: 120px 0;
+}

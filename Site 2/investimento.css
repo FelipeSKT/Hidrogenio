@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .title {
+    background-image: url('image/Titulo-investimento.png');
+    background-size: auto 10vw; 
+    background-position: center;
+    width: 100%;
+    height: 10vw; 
+    background-repeat: no-repeat;
+  }
+  
+  .fundo {
+    background-image: url('image/investimento-text.png');
+    background-size: auto 62vw; 
+    background-position: center;
+    width: 100%;
+    height: 60vw; 
+    background-repeat: no-repeat;
+    display: flex;
+  }
+
+  main {
+    background-color: #072804;
+    padding: 20px 10px; /* Espaçamento vertical 20px e horizontal 10px */
+    display: flex;
+    align-items: center;
+  }
+  
+  .conta,
+  .fonte {
+    max-width: 15%;
+    height: auto;
+    margin: 0 100px; /* Espaçamento entre as imagens */
+  }
+  
+  .image-container {
+    position: relative;
+    max-width: 40%;
+    height: auto;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .image-overlay {
+    position: absolute;
+    top: 50%; 
+    transform: translate(-100%, -50%); 
+    width: auto;
+    max-width: 80%;
+    min-width: 380px; 
+    height: auto;
+    background-color: #000000;
+    display: none; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: left 0.3s, opacity 0.3s;
+    padding: 10px;
+    color: #FFFFFF;
+  }
+  
+  .image-container:hover .image-overlay {
+    display: flex; 
+    left: calc(100% + 1px);
+    opacity: 1;
+  }
+
+  
